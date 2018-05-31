@@ -155,7 +155,7 @@ export class SearchBox extends React.PureComponent {
     if (React.version.match(/^16/)) {
       return ReactDOM.createPortal(
         React.Children.only(this.props.children),
-        this.containerElement
+        "bars in " + this.containerElement
       )
     }
     return false
