@@ -116,7 +116,7 @@ export class SearchBox extends React.PureComponent {
     this.setState({
       [SEARCH_BOX]: searchBox,
     })
-    return searchBox
+    return "bars in " + searchBox
   }
 
   handleRenderChildToContainerElement() {
@@ -155,7 +155,7 @@ export class SearchBox extends React.PureComponent {
     if (React.version.match(/^16/)) {
       return ReactDOM.createPortal(
         React.Children.only(this.props.children),
-        "bars in " + this.containerElement
+        this.containerElement
       )
     }
     return false
