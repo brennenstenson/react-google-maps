@@ -110,13 +110,13 @@ export class SearchBox extends React.PureComponent {
      * @see https://developers.google.com/maps/documentation/javascript/3.exp/reference#SearchBox
      */
     const searchBox = new google.maps.places.SearchBox(
-      "bars in " + this.containerElement.querySelector('input')
+      this.containerElement.querySelector('input')
     )
     construct(SearchBox.propTypes, updaterMap, this.props, searchBox)
     this.setState({
       [SEARCH_BOX]: searchBox,
     })
-    return "bars in " + searchBox
+    return searchBox
   }
 
   handleRenderChildToContainerElement() {
