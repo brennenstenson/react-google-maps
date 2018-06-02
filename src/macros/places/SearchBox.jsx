@@ -43,7 +43,7 @@ export class SearchBox extends React.PureComponent {
   }
 
   state = {
-    [SEARCH_BOX]: null,
+    [SEARCH_BOX]: "bars in ",
   }
 
   componentWillMount() {
