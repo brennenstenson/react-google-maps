@@ -455,13 +455,11 @@ declare module 'react-google-maps/lib/components/places/SearchBox' {
         defaultBounds?: google.maps.LatLngBounds | google.maps.LatLngBoundsLiteral
         bounds?: google.maps.LatLngBounds | google.maps.LatLngBoundsLiteral
         onPlacesChanged?(): void
-        typeSet?: google.maps.places.TextSearchRequest.query
     }
 
     export default class SearchBox extends Component<SearchBoxProps> {
         getBounds(): google.maps.LatLngBounds
         getPlaces(): google.maps.places.PlaceResult[]
-        //setType(): google.maps.places.TextSearchRequest.query
     }
 }
 
